@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bfdc6b8acebe4d829869f1bf0454d160" Name="Diagram1">
+        <EntityTypeShape EntityType="AccountingModel.Cart" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.CartItem" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Category" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Customer" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Employee" Width="1.5" PointX="3.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Order" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.OrderDetail" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Product" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.State" Width="1.5" PointX="1.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Supplier" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="AccountingModel.FK_Cart_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Cart_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_CartItems_Cart" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_CartItems_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Customer_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Employee_State" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_OrderDetails_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Product_OrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Product_Supplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
