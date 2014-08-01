@@ -161,7 +161,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="CustomerList.html" />
+    <Content Include="Templates\CustomerForm.html" />
+    <Content Include="Templates\CustomerList.html" />
+    <Content Include="CustomerList2.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -177,6 +179,11 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Custom\CustomerApp.js" />
+    <Content Include="Scripts\errors.json" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Scripts\angular-resource.min.js.map" />
     <EntityDeploy Include="Models\AccModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AccModel.Designer.cs</LastGenOutput>
@@ -194,11 +201,6 @@
       <DependentUpon>AccModel.edmx</DependentUpon>
       <LastGenOutput>AccModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Scripts\Custom\CustomerApp.js" />
-    <Content Include="Scripts\errors.json" />
-    <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-route.min.js.map" />
-    <Content Include="Scripts\angular-resource.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
@@ -212,8 +214,8 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Views\Customer\CustomerList2.html" />
     <Content Include="Views\Customer\CustomerList.html" />
-    <Content Include="Views\Customer\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -223,8 +225,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Customer2Controller.cs" />
     <Compile Include="Controllers\CustomerApiController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\EmpApiController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -309,6 +313,11 @@
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Customer2\Create.cshtml" />
+    <Content Include="Views\Customer2\Delete.cshtml" />
+    <Content Include="Views\Customer2\Details.cshtml" />
+    <Content Include="Views\Customer2\Edit.cshtml" />
+    <Content Include="Views\Customer2\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
